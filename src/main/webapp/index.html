@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Person information:</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="script/lib/jquery-2.1.4.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="script/page.js"></script>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td>
+            <label for="name">Name:</label>
+        </td>
+        <td>
+            <input id="name" name="name" type="text"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="surname">Surname:</label>
+        </td>
+        <td>
+            <input id="surname" name="surname" type="text"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="patronymic">Patronymic:</label>
+        </td>
+        <td>
+            <input id="patronymic" name="patronymic" type="text"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="bdate">Date of birth:</label>
+        </td>
+        <td>
+            <input id="bdate" type="text"/>
+        </td>
+    </tr>
+</table>
+
+<input type="hidden" id="id" value="-1">
+
+<div style="padding-top:10px;">
+    <button id="submit" name="submit" type="button" value="save">Save</button>
+</div>
+
+<div style="padding-top:10px;">
+    <input id="personId" name="personId" type="text"/>
+
+    <button id="load" name="load" type="button" value="load">Load by id</button>
+</div>
+
+
+<div style="padding-top:10px;">
+
+    <button id="clear" name="clear" type="button" value="clear">Clear form</button>
+</div>
+
+<div id="status">
+
+</div>
+
+
+</body>
+
+</html>
