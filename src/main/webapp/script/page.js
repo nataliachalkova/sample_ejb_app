@@ -18,7 +18,7 @@ $(document).ready(function () {
         $('#status').html("");
 
         $.ajax({
-            url: "/SampleApp/api/person/save",
+            url: "/SampleEjbApp/api/person/save",
             type: "POST",
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(formData),
@@ -45,7 +45,7 @@ $(document).ready(function () {
 
         var personId = $('#personId').val();
         $.ajax({
-            url: "/SampleApp/api/person/get/" + personId,
+            url: "/SampleEjbApp/api/person/get/" + personId,
             type: "GET",
             success: function (data, textStatus, jqXHR) {
                 //console.log(data);
